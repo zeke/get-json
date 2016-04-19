@@ -14,10 +14,7 @@
   "devDependencies": {
     "prova": "*"
   },
-  "repository": {
-    "url": "git@github.com:azer/get-json.git",
-    "type": "git"
-  },
+  "repository": "github:zeke/get-json",
   "author": "azer",
   "license": "BSD"
 }
