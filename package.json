@@ -10,9 +10,10 @@
     "node": ">=4"
   },
   "dependencies": {
-    "request": "*",
     "is-node": "0.0.0",
-    "jsonp": "0.0.4"
+    "jsonp": "0.0.4",
+    "request": "*",
+    "tape": "^4.6.2"
   },
   "devDependencies": {
     "prova": "*"
