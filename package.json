@@ -12,11 +12,10 @@
   "dependencies": {
     "is-node": "0.0.0",
     "jsonp": "0.0.4",
-    "request": "*",
-    "tape": "^4.6.2"
+    "request": "*"
   },
   "devDependencies": {
-    "prova": "*"
+    "tape": "^4.6.2"
   },
   "repository": "github:zeke/get-json",
   "author": "azer",
