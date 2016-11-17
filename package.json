@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
     "request": "*",
     "is-node": "0.0.0",
