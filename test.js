@@ -1,11 +1,11 @@
 var test = require('tape');
 var json = require("./");
 
-test('get last songs from radio paradise api', function (t) {
-  json('http://api.listenparadise.org', function (error, body) {
+test('get last libraries from cdnjs.com', function (t) {
+  json('https://api.cdnjs.com/libraries/jquery', function (error, body) {
     t.plan(3);
     t.error(error);
-    t.ok(body.ok);
-    t.equal(body.result.length, 4);
+    t.ok(body.name);
+    t.equal(body.keywords.length, 6);
   });
 });
