@@ -1,15 +1,11 @@
-var test = require('whew');
+var test = require('prova');
 var json = require("./");
 
-test.add('Get /users from JSONPlaceholder API', function (res) {
-  json('https://jsonplaceholder.typicode.com/users', function (error, body) {
-    if (error || typeof body === "object") {
-    	res(true, "Got some type of valid response.");
-    }
-    else {
-    	res(false, "Unexpected response.");
-    }
+test('get last songs from radio paradise api', function (t) {
+  json('http://api.listenparadise.org', function (error, body) {
+    t.plan(3);
+    t.error(error);
+    t.ok(body.ok);
+    t.equal(body.result.length, 4);
   });
 });
-
-test.test();
