@@ -1,11 +1,10 @@
 var test = require('prova');
 var json = require("./");
 
-test('get last songs from radio paradise api', function (t) {
-  json('http://api.listenparadise.org', function (error, body) {
-    t.plan(3);
+test('Get IP from JSONTest API', function (t) {
+  json('http://ip.jsontest.com/', function (error, body) {
+    t.plan(2);
     t.error(error);
-    t.ok(body.ok);
-    t.equal(body.result.length, 4);
+    t.ok(body.ip);
   });
 });
