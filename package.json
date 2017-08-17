@@ -6,13 +6,16 @@
   "scripts": {
     "test": "node test"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
-    "request": "*",
     "is-node": "0.0.0",
-    "jsonp": "0.0.4"
+    "jsonp": "0.0.4",
+    "request": "*"
   },
   "devDependencies": {
-    "prova": "*"
+    "tape": "^4.6.2"
   },
   "repository": "github:zeke/get-json",
   "author": "azer",
