@@ -7,12 +7,12 @@
     "test": "node test"
   },
   "dependencies": {
-    "request": "*",
     "is-node": "0.0.0",
-    "jsonp": "0.0.4"
+    "jsonp": "0.0.4",
+    "phin": "^2.2.6"
   },
   "devDependencies": {
-    "prova": "*"
+    "prova": "azer/prova"
   },
   "repository": "github:zeke/get-json",
   "author": "azer",
