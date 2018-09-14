@@ -13,17 +13,26 @@ var getJSON = require('get-json')
 
 getJSON('http://api.listenparadise.org', function(error, response){
 
-    error
+    console.log(error);
     // undefined
 
-    response.result
+    console.log(response);
     // ["Beth Orton &mdash; Stolen Car",
     // "Jack White &mdash; Temporary Ground",
     // "I Am Kloot &mdash; Loch",
     // "Portishead &mdash; Glory Box"]
+});
+```
 
-    response.ok
-    // => true
+Alternatively, you can use a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises):
 
-})
+```js
+var getJSON = require('get-json')
+
+getJSON('http://api.listenparadise.org')
+    .then(function(response) {
+      console.log(response);
+    }).catch(function(error) {
+      console.log(error);
+    });
 ```
