@@ -9,7 +9,6 @@
   "dependencies": {
     "is-node": "0.0.0",
     "jsonp": "0.0.4",
-    "node-noop": "^1.0.0",
     "phin": "^2.2.6"
   },
   "devDependencies": {
