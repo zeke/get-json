@@ -1,6 +1,6 @@
 {
   "name": "get-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-platform library for getting JSON docs",
   "main": "index.js",
   "scripts": {
